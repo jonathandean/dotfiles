@@ -1,0 +1,25 @@
+# Ignore everything
+*
+
+# But not these files...
+
+# Bash
+!*.bashrc
+!*.bash_alias
+!*.bash_profile
+!*.bash_login
+
+# Git
+!.git-completion.bash
+!.gitconfig
+!.gitignore
+!.gitignore_global
+
+# Vim
+!*.gvimrc
+!*.vimrc_common
+!*.vimrc
+!*.vim
+
+# Silver Searcher
+!.agignore

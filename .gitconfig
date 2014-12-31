@@ -1,0 +1,33 @@
+[user]
+	name = Jonathan Dean
+	email = jon@jonathandean.com
+[core]
+	autocrlf = input
+	excludesfile = /Users/jon/.gitignore_global
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[alias]
+  co = checkout
+  ci = commit
+  rb = rebase
+[push]
+  default = upstream
+[merge]
+  tool = opendiff
+[diff]
+  tool = opendiff
+[help]
+  autocorrect = 1
+[difftool]
+  prompt = true
+[mergetool]
+  prompt = true
+  keepBackup = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
