@@ -18,3 +18,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
