@@ -4,6 +4,9 @@ function parse_git_branch {
         git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
+# login prompt
+export PS1="\e[32m[\t]\e[0m \u@\h\e[33m [\w]\e[0m \$(parse_git_branch)\n> "
+
 # Env vars
 if [ -f ~/.bash_env ]; then source ~/.bash_env ; fi
 # Aliases
