@@ -3,7 +3,7 @@
 	email = jon@jonathandean.com
 [core]
 	autocrlf = input
-	excludesfile = /Users/jon/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [color]
   branch = auto
   diff = auto
