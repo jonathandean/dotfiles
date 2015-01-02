@@ -3,8 +3,6 @@ if [ -f ~/.bashrc ]; then source ~/.bashrc ; fi
 # better version of openssl
 export PATH="/usr/local/Cellar/openssl/1.0.1i/bin:$PATH"
 
-# python virtualenv wrapper
-source /usr/local/bin/virtualenvwrapper.sh
 export PATH="/usr/local/heroku/bin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
