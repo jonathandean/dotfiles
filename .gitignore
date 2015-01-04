@@ -23,3 +23,8 @@
 
 # Silver Searcher
 !.agignore
+
+# Dragon Dictate (Mac)
+!dragon-commands-Terms.dynamictext
+!dragon-commands.commandstext
+
