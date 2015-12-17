@@ -31,6 +31,9 @@ alias prodconsole='heroku run rails c -r production'
 alias hr='heroku run'
 alias migrate='be rake db:migrate && RAILS_ENV=test be rake db:migrate'
 
+# ElasticSearch web UI
+alias esw='open http://localhost:9200/_plugin/head'
+
 # Git
 alias pull="git pull --rebase"
 alias pb="git pull --rebase && bundle install"
