@@ -1,6 +1,7 @@
 # Get to common directories fast
 alias proj='cd ~/Projects'
 alias sf='cd ~/Projects/stitchfix'
+alias th='cd ~/Projects/stitchfix/stitch-fix-rails-project'
 
 # Common command shortcuts
 alias la='ls -la'
@@ -11,6 +12,7 @@ alias ds='du -k  | grep -v "\/.*\/"'
 alias linecount="awk '{a+=\$1}END{print a}'"
 alias dos2unix="perl -npe 's/\x0D/\x0A/g' "
 alias diskspace="du -k | grep -v './.*\/'"
+alias listening="netstat -an | grep LISTEN"
 
 # Rails
 alias r='rails'
@@ -23,9 +25,11 @@ alias rc='bundle exec rails console'
 alias rspecs="RAILS_ENV=test RACK_ENV=test bundle exec rake spec"
 alias rspecsff="RAILS_ENV=test RACK_ENV=test bundle exec rspec spec/ --fail-fast"
 alias runspec="RAILS_ENV=test RACK_ENV=test bundle exec rspec"
-alias resetdb='rake db:drop && rake db:create && rake db:migrate && rake db:seed'
+#alias resetdb='rake db:drop && rake db:create && rake db:migrate && rake db:seed'
+alias resetdb='bundle exec rake db:drop db:create db:migrate db:seed'
 alias prodconsole='heroku run rails c -r production'
 alias hr='heroku run'
+alias migrate='be rake db:migrate && RAILS_ENV=test be rake db:migrate'
 
 # Git
 alias pull="git pull --rebase"
@@ -35,8 +39,9 @@ alias bi="bundle install"
 alias bu="bundle update"
 
 # Django/Python
-alias djs="DJANGO_ENV=local ./manage.py runserver"
-alias djc="DJANGO_ENV=local ./manage.py shell"
+alias djc="DJANGO_ENV=local gunicorn core.wsgi:application"
+#alias djc="DJANGO_ENV=local python manage.py shell"
+alias djs="DJANGO_ENV=local python manage.py runserver"
 alias djmigrate="DJANGO_ENV=local ./manage.py migrate --delete-ghost-migrations"
 alias djmigratetest="DJANGO_ENV=local ./manage.py migrate --delete-ghost-migrations --db-dry-run"
 alias djcs="DJANGO_ENV=local ./manage.py collectstatic"
@@ -57,3 +62,4 @@ alias trans='cd ~/Projects/stitchfix/transmetropolitan'
 alias coremodels='cd ~/Projects/stitchfix/core_models'
 alias scheduling='cd ~/Projects/stitchfix/scheduling'
 alias kingmob='cd ~/Projects/stitchfix/kingmob'
+alias zs='cd ~/Projects/stitchfix/zendesk-service'
