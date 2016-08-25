@@ -1,0 +1,32 @@
+# Ignore everything
+*
+
+# But not these files...
+
+!*README.md
+
+# Bash
+!*.bashrc
+!*.bash_alias
+!*.bash_profile
+!*.bash_login
+
+# Git
+!.git-completion.bash
+!.gitconfig
+!.gitignore
+!.gitignore_global
+
+# Vim
+!*.gvimrc
+!*.vimrc_common
+!*.vimrc
+!*.vim
+
+# Silver Searcher
+!.agignore
+
+# Dragon Dictate (Mac)
+!dragon-commands-Terms.dynamictext
+!dragon-commands.commandstext
+

@@ -1,0 +1,27 @@
+[user]
+	name = Jonathan Dean
+	email = jon@jonathandean.com
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[alias]
+  co = checkout
+  ci = commit
+  rb = rebase
+[push]
+  default = upstream
+[merge]
+  tool = opendiff
+[diff]
+  tool = opendiff
+[help]
+  autocorrect = 1
+[difftool]
+  prompt = true
+[mergetool]
+  prompt = true
+  keepBackup = false
