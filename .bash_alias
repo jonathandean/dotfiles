@@ -18,9 +18,9 @@ alias listening="netstat -an | grep LISTEN"
 alias r='rails'
 alias be='bundle exec'
 alias rs='bundle exec rails server'
-alias fs='bundle exec foreman start'
-alias fsl='bundle exec foreman start -f Procfile.lean'
-alias fsb='bundle exec foreman start -f Procfile.beefy'
+alias fs='foreman start'
+alias fsl='foreman start -f Procfile.lean'
+alias fsb='foreman start -f Procfile.beefy'
 alias rc='bundle exec rails console'
 alias rspecs="RAILS_ENV=test RACK_ENV=test bundle exec rake spec"
 alias rspecsff="RAILS_ENV=test RACK_ENV=test bundle exec rspec spec/ --fail-fast"
