@@ -3,14 +3,13 @@
 
 # But not these files...
 
-# Bash
-!*.bashrc
-!*.bash_alias
-!*.bash_profile
-!*.bash_login
+# Zsh
+!*.zshrc
+
+# Oh My Zsh
+!.oh-my-zsh/*
 
 # Git
-!.git-completion.bash
 !.gitconfig
 !.gitignore
 !.gitignore_global
@@ -23,8 +22,3 @@
 
 # Silver Searcher
 !.agignore
-
-# Dragon Dictate (Mac)
-!dragon-commands-Terms.dynamictext
-!dragon-commands.commandstext
-
