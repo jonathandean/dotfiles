@@ -2,8 +2,8 @@
   name = Jon Dean
   email = jon@jonathandean.com
 [core]
-	autocrlf = input
-	excludesfile = ~/.gitignore_global
+  autocrlf = input
+  excludesfile = ~/.gitignore_global
 [color]
   branch = auto
   diff = auto
