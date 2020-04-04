@@ -1,12 +1,8 @@
 # Jon Dean's dotfiles
 
-Nothing fancy here, just a backup for myself.
+Zsh edition. Nothing fancy here, just a backup for myself.
 
 ## Prerequisites
 
+- [Oh My Zsh](https://ohmyz.sh/)
 - [RVM](https://rvm.io/rvm/install)
-- [Heroku Toolbelt](https://toolbelt.heroku.com/)
-
-## Dragon Dictate Commands
-
-Not really dotfiles but with a similar purpose. This is an export of commands so you must use the Command Import menu in Dragon Dictate to use them.
