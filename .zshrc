@@ -73,11 +73,9 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
   github
-  bundler
   dotenv
   osx
   rake
-  rbenv
   ruby
   aws
   brew
