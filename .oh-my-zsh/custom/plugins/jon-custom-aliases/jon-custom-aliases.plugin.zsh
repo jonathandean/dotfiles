@@ -16,3 +16,8 @@ alias master="git checkout master && git pull --rebase && bundle install"
 # Network throttle
 alias slowweb='sudo ipfw pipe 1 config bw 15KByte/s'
 alias fastweb='sudo ipfw delete 1'
+
+# bundler
+alias bi="bundle install"
+alias bu="bundle update"
+alias be="bundle exec"
