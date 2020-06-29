@@ -131,5 +131,9 @@ source $ZSH/oh-my-zsh.sh
 # Don't allow Next.js to collect data
 export NEXT_TELEMETRY_DISABLED=1
 
+# Ensure that postgres binaries can be found
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/12/bin"
+export CONFIGURE_ARGS="with-pg-include=/Applications/Postgres.app/Contents/Versions/12/include"
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
