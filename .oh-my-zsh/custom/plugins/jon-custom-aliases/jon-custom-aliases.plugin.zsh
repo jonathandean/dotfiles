@@ -3,6 +3,7 @@ alias proj='cd ~/Projects'
 
 # Rails
 alias fs='bundle exec foreman start'
+alias fsd='bundle exec foreman start -f Procfile.dev'
 alias rspecs="RAILS_ENV=test RACK_ENV=test bundle exec rake spec"
 alias rspecsff="RAILS_ENV=test RACK_ENV=test bundle exec rspec spec/ --fail-fast"
 alias runspec="RAILS_ENV=test RACK_ENV=test bundle exec rspec"
