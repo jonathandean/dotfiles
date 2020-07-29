@@ -9,6 +9,7 @@ alias rspecsff="RAILS_ENV=test RACK_ENV=test bundle exec rspec spec/ --fail-fast
 alias runspec="RAILS_ENV=test RACK_ENV=test bundle exec rspec"
 alias resetdb='bundle exec rake db:drop db:create db:migrate db:seed'
 alias migrate='be rake db:migrate && RAILS_ENV=test be rake db:migrate'
+alias rollback='be rake db:rollback && RAILS_ENV=test be rake db:rollback'
 
 # Git
 alias pull="git pull --rebase"
